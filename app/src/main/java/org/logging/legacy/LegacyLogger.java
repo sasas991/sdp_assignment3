@@ -8,6 +8,10 @@ public class LegacyLogger {
             return 2;
         }
 
+        if (text == null || text.isBlank()) {
+            return 1;
+        }
+
         return 0;
     }
 }
