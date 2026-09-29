@@ -5,7 +5,7 @@ SE-2539
 
 Adapter and Bridge Patterns
 
-A simple Java logging system demonstrating the **Bridge** and **Adapter** design patterns.
+A simple Java logging system demonstrating the Bridge and Adapter design patterns.
 
 ## features
 
