@@ -14,7 +14,7 @@ class AuditLoggerTest {
 
         logger.log("user deleted an account");
 
-        assertEquals("audit: User deleted an account", writer.lastMessage);
+        assertEquals("audit: user deleted an account", writer.lastMessage);
     }
 
     private static class StubLogWriter implements LogWriter {
