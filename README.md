@@ -7,7 +7,11 @@ Adapter and Bridge Patterns
 
 A simple Java logging system demonstrating the Bridge and Adapter design patterns.
 
-## features
+## Design
+
+[Design Rationale](DESIGN.md)
+
+## Features
 
 - bridge pattern with ApplicationLogger and AuditLogger
 - 3 LogWriter implementations:
@@ -18,7 +22,7 @@ A simple Java logging system demonstrating the Bridge and Adapter design pattern
 - dynamic implementor selection at runtime
 - junit 5 tests
 
-## run
+## Run
 
 run tests:
 
