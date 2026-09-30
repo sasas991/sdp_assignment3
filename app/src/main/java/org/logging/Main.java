@@ -3,6 +3,7 @@ package org.logging;
 import java.nio.file.Path;
 
 import org.logging.abstraction.ApplicationLogger;
+import org.logging.abstraction.AuditLogger;
 import org.logging.abstraction.Logger;
 import org.logging.selection.LogWriterRegistry;
 
@@ -34,8 +35,10 @@ public class Main {
 
         var writer = registry.create(writerType);
 
-        Logger logger = new ApplicationLogger(writer);
+        Logger applicationLogger = new ApplicationLogger(writer);
+        applicationLogger.log("user logged in");
 
-        logger.log("user logged in");
+        Logger auditLogger = new AuditLogger(writer);
+        auditLogger.log("user deleted an account");
     }
 }
